@@ -31,7 +31,7 @@ function calculate(){
         }
 
         else {
-            clearInput();
+            // clearInput();
             
             Answer.value = calculatedInterest;
 
