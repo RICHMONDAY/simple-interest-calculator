@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Interest  Calculator</title>
+</head>
+<body class="bg-warning">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <div class="card card-body  mt-5">
+                    <h1 class="heading display-5 pb-3 text-center ">Simple Interest Calculator</h1>
+                    <form id="interest-form">
+                        <div class="form-group">
+                          <label for="principal" >Principal</label>
+                          <input type="number" class="form-control" id="principal" placeholder="Enter Principal">
+                        </div>
+                        <div class="form-group">
+                          <label for="time">Time (Years)</label>
+                          <input type="number" class="form-control" id="time" placeholder="Enter Time">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="rate">Rate (%)</label>
+                            <input type="number" class="form-control" id="rate" placeholder="Enter Rate">
+                          </div>
+
+                        <div class="form-group">
+                            <input type="submit" value="Caluclate" class="btn btn-dark btn-block">
+                        </div>
+                      </form>
+
+                      <!--LOADER-->
+
+                        <div id="loading" class="text-center">
+                          <img src="img/loading.gif" alt="">
+                        </div>
+
+                      <!--RESULT-->
+                      <div class="form-group" id="results">
+                        <label for="answer">Interest</label>
+                        <input type="number" class="form-control" id="answer" disabled>
+                      </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+      
+</body>
+</html>
